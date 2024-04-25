@@ -86,14 +86,12 @@
 			children = (
 				2124C4792BD4FE7100F4AA64 /* VideoMaker */,
 				21CC87222BD2B1AD000C1138 /* JS */,
-				2183E17E2BD27E480013D2E9 /* AppDelegate.swift */,
-				2183E1802BD27E480013D2E9 /* SceneDelegate.swift */,
+				21C4D2E92BDA79C8008AB918 /* SupportFiles */,
 				21C4D2E82BDA78E2008AB918 /* ViewControllers */,
 				2183E1842BD27E480013D2E9 /* Main.storyboard */,
 				2183E1872BD27E490013D2E9 /* Assets.xcassets */,
 				2183E1892BD27E490013D2E9 /* LaunchScreen.storyboard */,
 				2183E18C2BD27E490013D2E9 /* Info.plist */,
-				21CC87202BD2A5B3000C1138 /* Constants.swift */,
 			);
 			path = WebViewTest;
 			sourceTree = "<group>";
@@ -105,6 +103,16 @@
 				2183E1922BD27EE40013D2E9 /* WebViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		21C4D2E92BDA79C8008AB918 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2183E17E2BD27E480013D2E9 /* AppDelegate.swift */,
+				2183E1802BD27E480013D2E9 /* SceneDelegate.swift */,
+				21CC87202BD2A5B3000C1138 /* Constants.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		21CC87222BD2B1AD000C1138 /* JS */ = {

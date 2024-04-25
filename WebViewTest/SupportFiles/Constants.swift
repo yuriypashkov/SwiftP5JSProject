@@ -7,17 +7,8 @@
 
 import Foundation
 
+// MARK: - JS-code for testing in WKWebView
 final class Constants {
-    
-//    static var p5js: String {
-//        if let url = Bundle.main.url(forResource: "p5", withExtension: "js") {
-//            return url.absoluteString
-//        } else {
-//            return "none"
-//        }
-//    }
-    
-    
     // <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     // <script src="sketchLetters.js"></script>
     // <script src="CCapture.all.min.js"></script>

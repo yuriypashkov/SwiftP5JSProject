@@ -12,19 +12,15 @@ class WebViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
-    var selectedColor: Colors = .green // red (255, 0, 0), green (0, 211, 0)
+    var selectedColor: Colors = .green
     private var savedFramesCount: Int = 0
-
     private var imageURLs: [URL] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // delegate for capture file downloading
         webView.navigationDelegate = self
-
-        //let url = Bundle.main.url(forResource: "web_graphics_test_003", withExtension: "html")!
-        //webView.loadFileURL(url, allowingReadAccessTo: url)
-
+        // make html-string with p5js-code
         var finalString = Constants.htmlHeader
         switch selectedColor {
         case .green:
@@ -33,6 +29,7 @@ class WebViewController: UIViewController {
             finalString += Constants.sketchRed
         }
         finalString += Constants.htmlFooter
+        // show html in webview
         webView.loadHTMLString(finalString, baseURL: Bundle.main.bundleURL)
     }
     
